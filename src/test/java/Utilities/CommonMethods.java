@@ -16,12 +16,13 @@ import BaseDrivers.PageDriver;
 
 public class CommonMethods {
 
+	//Hard - Assertion Method
     public static void verifyAlertMessage(ExtentTest childTest, String actualMessage, String expectedMessage, String fieldName) {
         try {
             Assert.assertEquals(actualMessage, expectedMessage);
-            childTest.log(Status.PASS, fieldName + " alert message is as expected.");
+            childTest.log(Status.PASS, fieldName + " The alert message is as expected.");
         } catch (AssertionError e) {
-            childTest.log(Status.FAIL, fieldName + " alert message is not as expected. Expected: " + expectedMessage + ", Actual: " + actualMessage);
+            childTest.log(Status.FAIL, fieldName + " The alert message is not as expected. Expected: " + expectedMessage + ", Actual: " + actualMessage);
             throw e;
         }
     }

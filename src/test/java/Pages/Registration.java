@@ -30,7 +30,7 @@ public class Registration extends BaseDriver {
 	@FindBy(xpath = "//input[@placeholder='Please enter your phone number']")
 	public WebElement phoneNumber;
 
-	@FindBy(xpath = "//span[contains(text(),'Please enter a valid phone numbe.')]")
+	@FindBy(xpath = "//span[contains(text(),'Please enter a valid phone number.')]")
 	public WebElement phoneNumberError;
 
 	@FindBy(xpath = "//input[@placeholder='Enter your first and last name']")

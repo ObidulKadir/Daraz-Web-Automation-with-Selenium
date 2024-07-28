@@ -57,6 +57,7 @@ public class RegistrationPageTestCase {
 		childTest = parentTest.createNode("<p style=\\\\\"color:#3E96E7; font-size:20px\\\\\\\"><b>Verify the Full Name\r\n"
 				+ ".</b></p>");
 		Registration rp = new Registration(childTest);
+		
 		CommonMethods.sendKeysField(childTest,rp.fullName, "Full Name", "FullName", "ABC");
 	}
 	
