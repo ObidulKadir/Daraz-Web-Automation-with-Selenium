@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Daraz]" guice-stage="DEVELOPMENT">
+  <test name="HomePage(failed)">
+    <classes>
+      <class name="TestCase.HomePageTestCase">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="HTC_1"/>
+          <include name="StartBrowser"/>
+          <include name="report"/>
+          <include name="StartUrl"/>
+        </methods>
+      </class> <!-- TestCase.HomePageTestCase -->
+    </classes>
+  </test> <!-- HomePage(failed) -->
+  <test name="RegistrationPage(failed)">
+    <classes>
+      <class name="TestCase.RegistrationPageTestCase">
+        <methods>
+          <include name="StartUrl"/>
+          <include name="RTC_2"/>
+          <include name="RTC_3"/>
+          <include name="report"/>
+        </methods>
+      </class> <!-- TestCase.RegistrationPageTestCase -->
+    </classes>
+  </test> <!-- RegistrationPage(failed) -->
+</suite> <!-- Failed suite [Daraz] -->
